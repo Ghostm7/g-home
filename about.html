@@ -6,11 +6,23 @@
      initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
         nav{
             background-color: black;
             color: white;
             padding: 10px;
             text-align: center;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            top: 0;
         }
         nav ul{
             
@@ -24,10 +36,53 @@
             display: inline;
             padding: 10px;
         }
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        .discount {
+            color: #e74c3c;
+            text-decoration: line-through;
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center">G-home</h1>
+   
     <nav>
         <ul>
             <li><a style="color: white; text-decoration: none" href="index.html">Home</a></li>
@@ -36,6 +91,51 @@
 
 
     </nav>
-    <h4 style="text-align: center">This is about</h4>
+    <header>
+        <h1 style="text-align: center">About G-home</h1>
+    </header>
+    <main>
+
+        <!-- House Card 1 -->
+        <div class="card">
+            <img src="./img/h3.jpeg" alt="House 1">
+            <div class="card-content">
+                <h2>Modern Villa</h2>
+                <p>Spacious and luxurious villa with stunning views.</p>
+                <p class="price">
+                    <span class="discount">$500,000</span>
+                    $450,000
+                </p>
+            </div>
+        </div>
+
+        <!-- House Card 2 -->
+        <div class="card">
+            <img src="./img/h1.jpg" alt="House 2">
+            <div class="card-content">
+                <h2>Cozy Cottage</h2>
+                <p>Charming cottage with a beautiful garden and rustic appeal.</p>
+                <p class="price">
+                    <span class="discount">$300,000</span>
+                    $280,000
+                </p>
+            </div>
+        </div>
+
+        <!-- House Card 3 -->
+        <div class="card">
+            <img src="./img/h2.jpeg" alt="House 3">
+            <div class="card-content">
+                <h2>Urban Loft</h2>
+                <p>Stylish loft in the heart of the city with modern amenities.</p>
+                <p class="price">
+                    <span class="discount">$700,000</span>
+                    $650,000
+                </p>
+            </div>
+        </div>
+
+    </main>
+
 </body>
 </html>
